@@ -1,0 +1,56 @@
+/*导航样式开始*/
+.nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;   /* 设置元素的堆叠顺序,值大覆盖值小 */
+    background-color: #017E5C;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    line-height: 50px;
+}
+
+.near {
+    width: 40px;
+    height: 50px;
+}
+
+.title{
+    /*子元素占父元素剩余空间的比例*/
+    flex-grow: 1;
+    height: 50px;
+    font-size: 18px;
+    margin-left: 33px;
+}
+
+.mycontainer>.top {
+    width: 100%;
+    height: 50px;
+    position: fixed;  /*生成绝对定位的元素*/
+    display: flex;   /*弹性布局*/
+    border-bottom: solid 1px #017E5C;
+    background-color: #fff;
+    z-index: 999;   /* 设置元素的堆叠顺序,值大覆盖值小 */
+}
+
+.top {
+    /* 盒子内几个元素居中，且之间留有一定间隙 */
+    justify-content:space-around;
+}
+button {
+    height: 30px;
+    width: 60px;
+    margin-top: 12px;
+}
+
+#btn1 {
+    background-color: darkgoldenrod;
+    color: #fff;
+}
+
+#btn2 {
+    color: #017E5C;
+}

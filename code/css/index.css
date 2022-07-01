@@ -1,0 +1,169 @@
+/*导航样式开始*/
+/*
+三栏布局：
+左右两块宽度固定,中间块跟着浏览器的缩放而缩放
+实现三栏布局：
+①弹性盒模型
+父元素开启弹性盒模型 display:flex;
+中间块 flex-grow:1;
+②绝对定位
+左侧绝对定位到父元素的左上角 left:0; top:0;
+右侧绝对定位到父元素的右上角 right:0; top:0;
+中间块设置 margin-left:左侧容器的宽度;  margin-right:右侧容器的宽度;
+
+*/
+.nav{
+    position: fixed; /*生成绝对定位的元素*/
+    top: 0;
+    left: 0;
+    z-index: 999;/* 设置元素的堆叠顺序,值大覆盖值小 */
+    /*父元素开启弹性盒模型 子元素默认水平排列*/
+    display: flex;  /*生成绝对定位的元素*/
+    width: 100%;
+    height: 50px;
+    background-color: #017E5C;
+    line-height: 50px;
+    color: #fff;
+}
+.city{
+    width: 65px;
+    height: 50px;
+    background-color: #F2BD47;
+    font-size: 14px;
+}
+.search{
+    width: 40px;
+    height: 50px;
+}
+.title{
+    /*子元素占父元素剩余空间的比例，将其居中*/
+    flex-grow: 1;
+    height: 50px;
+    font-size: 18px;
+}
+.city>a{
+    color: #fff;
+    font-size: 12px;
+}
+.search>i{
+    font-size: 20px;
+}
+/*导航样式结束*/
+/*banner样式开始*/
+.banner{
+    position: relative;  /*父层*/
+    overflow: hidden;  /*溢出隐藏、清除浮动、解决外边距塌陷*/
+    width: 100vw;
+}
+.wrap {
+    display: flex;
+    width: 500vw;
+    flex-wrap: nowrap; /*强制将图片放在一行*/
+}
+.wrap>a>img{
+    vertical-align: middle;   /*使元素垂直居中*/
+    width: 100%;
+}
+.wrap>a {
+    width: 100vw;
+}
+.btn{
+    display: flex;
+    /*设置在子元素之间平均分配父元素剩余的空间*/
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    /*走父元素的百分之50*/
+    left: 50%;
+    /*走的是自己的百分之50*/
+    transform: translateX(-50%);
+    width: 60%;
+    height: 5%;
+}
+.btn>li{
+    height: 100%;
+    width: 18%;
+    background-color: rgba(255, 255, .5);
+}
+.btn .active {
+    background-color: #017E5C;
+}
+/*banner样式结束*/
+/*消息样式开始*/
+.message{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+    color: #010000;
+    font-size: 14px;
+    text-align: left;
+    line-height: 30px;
+}
+.message>i{
+    color: #1D8B6D;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.message>span{
+    flex-grow: 1;  /*等分剩余空间*/
+    white-space: nowrap;  /*不换行*/
+    overflow: hidden;   /*溢出隐藏、清除浮动、解决外边距塌陷*/
+    text-overflow: ellipsis;  /*单行文本溢出显示省略号 */
+    display: none;   /* 隐藏内容 */
+}
+.message>.current {
+    display: block;  /* 为此类名的span内容显示 */
+}
+/*消息样式结束*/
+/*菜单样式开始*/
+.menu{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;  /*把borders和padding全都包含在定义的宽高里面*/
+}
+.menu>div{
+    flex-grow: 1;
+}
+.menu img{
+    width: 45px;
+    margin: 5px 0 10px;
+}
+.menu a{
+    color: #a6a6a6;
+    font-size: 14px;
+}
+/*菜单样式结束*/
+/*餐厅标题样式开始*/
+.ct-title{
+    width: 100%;
+    height: 25px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #eee;
+    text-align: left;
+    line-height: 25px;
+    font-size: 14px;
+    color: #017E5C;
+}
+/*餐厅标题样式结束*/
+
+/* 回到顶部开始 */
+.goTop{
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    right: 15px;
+    bottom: 110px;
+    display: none;
+}
+
+button {
+    background-color: #017E5C;
+    color: #fff;
+    border-radius: 10%;
+}
+/* 回到顶部结束 */
+

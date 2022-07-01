@@ -1,0 +1,29 @@
+/*页脚样式开始*/
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+}
+.footer>div{
+    height: 50px;
+    padding: 5px 0;
+    flex-grow: 1;
+}
+.footer a{
+    color: #a6a6a6;
+    font-size: 18px;
+}
+.footer i{
+    font-size: 20px;
+}
+.footer-active{
+    background-color: #017E5C;
+}
+.footer-active a{
+    color: #EEF5F3;
+}
+/*页脚样式结束*/

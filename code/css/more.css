@@ -1,0 +1,38 @@
+/*导航样式开始*/
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: #017E5C;
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+img {
+    height: 80px;
+    margin-top: 30px;
+}
+
+.cent {
+    background-color: #fff;
+    width: 90%;
+    border-radius: 1%;
+    margin-left: 15px;
+    border: solid 1px #eee;
+    margin-top: 40px;
+}
+
+.cent ul li {
+    border: solid 1px #eee;
+    color: gray;
+    height: 25.67px;
+    font-size: 16px;
+    line-height: 25.67px;
+    text-align: left;
+}
+
+/* 字体图标 */
+.hou>i {
+    margin-left: 220px;
+    
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/title.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./jquery/jquery-3.6.0.js"></script>
+    
+</head>
+<body>
+<!--导航开始-->
+<div class="nav">
+    <!-- 后退按钮 -->
+    <div class="return">
+        <!-- 返回到登陆界面 -->
+        <a href="./login.html" class="iconfont">&#xe70a;</a>
+    </div>
+    <span class="reg">用户注册</span>
+</div>
+<!--导航结束-->
+
+<!-- 主体部分开始 -->
+<div class="container">
+    <form action="">
+        <label for="">用户名称：</label> <input class="inp" id="username" type="text" placeholder="&nbsp;输入用户名"/><br>
+        <span class="username_error"></span><br>
+        <label for="">密码：</label> <input id="password" class="inp" type="password" placeholder="&nbsp;密码"/><br>
+        <span class="password_error"></span><br>
+        <label for="">确认密码：</label> <input id="repwd" class="inp" type="password" placeholder="&nbsp;确认密码"/><br>
+        <span class="repwd_error"></span><br>
+        <label>电子邮箱:&nbsp;</label><input id="email" type="text" placeholder="&nbsp;输入邮箱"/><br>
+        <span class="email_error"></span><br>
+        <label for="" class="sp">性别:</label><input id="red" type="radio" name=”sex” value="1"/>男<input id="red" type="radio" name=”sex” value="0"/>女<br><br>
+        <input class="inp" id="btn1" type="button" value="注册"><br><br>
+    </form>
+    <a href="./login.html"><input class="inp" type="button" value="去登录"></a>
+</div>
+<!-- 主体部分结束 -->
+
+<!--页脚开始-->
+<div class="footer">
+    <div> 
+        <a href="./index.html">
+            <i class="iconfont">&#xe600;</i>
+            <p>首页</p>
+        </a>
+    </div>
+    <div>
+        <a href="./nearby.html">
+            <i class="iconfont">&#xf004f;</i>
+            <p>附近</p>
+        </a>
+    </div>
+    <div class="footer-active">
+        <a href="user.html">
+            <i class="iconfont">&#xe68a;</i>
+            <p>用户</p>
+        </a>
+    </div>
+    <div>
+        <a href="./more.html">
+            <i class="iconfont">&#xe607;</i>
+            <p>更多</p>
+        </a>
+    </div>
+</div>
+<!--页脚结束-->
+<script src="./js/register.js"></script>
+</body>
+</html>

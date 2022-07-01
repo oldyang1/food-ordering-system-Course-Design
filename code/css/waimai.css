@@ -1,0 +1,20 @@
+/* 导航部分 */
+.nav{
+    position: fixed; /*生成绝对定位的元素*/
+    top: 0;
+    left: 0;
+    z-index: 999;/* 设置元素的堆叠顺序,值大覆盖值小 */
+    /*父元素开启弹性盒模型 子元素默认水平排列*/
+    display: flex;  /*生成绝对定位的元素*/
+    width: 100%;
+    height: 50px;
+    background-color: #017E5C;
+    line-height: 50px;
+    color: #fff;
+}
+.title{
+    /*子元素占父元素剩余空间的比例*/
+    flex-grow: 1;
+    height: 50px;
+    font-size: 18px;
+}
